@@ -1,0 +1,12 @@
+<app-header></app-header>
+
+
+<mat-drawer-container autosize class="sidenav-container">
+    <mat-drawer [opened]="sidebar.state | async" class="sidenav-drawer" mode="side">
+        <app-sidebar></app-sidebar>
+    </mat-drawer>
+
+    <div class="sidenav-content">
+        <router-outlet></router-outlet>
+    </div>
+</mat-drawer-container>

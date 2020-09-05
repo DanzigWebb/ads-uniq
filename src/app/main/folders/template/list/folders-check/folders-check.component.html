@@ -1,0 +1,21 @@
+
+<ng-container *ngIf="checked.length">
+    <mat-toolbar class="panel" [style.paddingLeft]="(sidebar.state | async) ? '220px' : '0'">
+
+        <div class="panel__content">
+            <div class="panel__item">
+                <span>Выбрано: {{checked.length}}</span>
+            </div>
+
+            <div class="panel__item">
+                <button mat-icon-button matTooltip="Уникализировать">
+                    <mat-icon>play_arrow</mat-icon>
+                </button>
+                <button mat-icon-button matTooltip="Очистить" (click)="check.clearAndUpdate()">
+                    <mat-icon>clear</mat-icon>
+                </button>
+            </div>
+        </div>
+
+    </mat-toolbar>
+</ng-container>

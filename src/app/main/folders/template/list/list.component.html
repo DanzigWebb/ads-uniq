@@ -1,0 +1,26 @@
+<mat-nav-list class="folders">
+    <div class="folders__item" *ngFor="let file of (folder.dirFiles | async) | folderSearch:(search.searchInput | async)">
+
+        <div class="folders__check">
+            <mat-checkbox color="primary" [(ngModel)]="file.checked" (change)="checkFiles()"></mat-checkbox>
+        </div>
+
+        <mat-list-item
+            (click)="scanFile(file)"
+            class="folder__item">
+
+            <mat-icon [svgIcon]="file.icon"></mat-icon>
+
+            <div mat-line>
+                <span>{{file.name}}</span>
+            </div>
+
+            <div class="folder__date" mat-line>
+                <span>{{file.lastModifier | date}}</span>
+            </div>
+        </mat-list-item>
+    </div>
+
+</mat-nav-list>
+
+<app-folders-check></app-folders-check>

@@ -1,0 +1,13 @@
+@import "vars";
+
+$padding: 10px;
+
+.folders {
+    margin: 0 auto;
+    padding: $padding;
+    
+    &__wrapper {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,13 @@
+<div class="folders">
+    <app-folders-navigation
+            (changeTpl)="setTemplate($event)">
+    </app-folders-navigation>
+
+    <folders-list></folders-list>
+
+    <!-- (!) disabled grid template-->
+    <!--<div class="folders__wrapper" [ngSwitch]="template">-->
+    <!--    <folders-list *ngSwitchCase="'list'"></folders-list>-->
+    <!--    <folders-grid *ngSwitchCase="'grid'"></folders-grid>-->
+    <!--</div>-->
+</div>

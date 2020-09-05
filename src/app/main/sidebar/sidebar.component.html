@@ -1,0 +1,16 @@
+<div class="sidebar">
+    <section class="sidebar__section">
+        <app-sidebar-folders></app-sidebar-folders>
+
+        <mat-divider></mat-divider>
+    </section>
+
+    <section class="sidebar__section">
+        <mat-nav-list class="sidebar__settings">
+            <mat-list-item (click)="openBottomSheet()">
+                <mat-icon mat-list-icon>settings</mat-icon>
+                <span>Settings</span>
+            </mat-list-item>
+        </mat-nav-list>
+    </section>
+</div>

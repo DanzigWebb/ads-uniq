@@ -1,0 +1,7 @@
+@import "vars";
+
+.sidebar {
+    min-width: 220px;
+    height: 100%;
+    @include flex(column, space-between)
+}

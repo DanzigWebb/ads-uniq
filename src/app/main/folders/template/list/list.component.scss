@@ -1,0 +1,13 @@
+@import "vars";
+
+.folders {
+    
+    &__item {
+        @include  flex(row, center, center)
+    }
+    
+    &__check {
+        width: 60px;
+        @include flex(row, center, center)
+    }
+}
